@@ -1,39 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Formulário de Feedback</title>
 </head>
+
 <body>
-    <h1>Formulário de Feedback</h1>
+    <header>
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
 
-    <form action="#">
-        <label for="nome">Nome: </label>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+            </ul>
+        </nav>
+        <h1>Lista de Exercícios 3</h1>
+        <div class="hamburger-menu" id="hamburger-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
 
-        <label for="email">E-mail: </label>
-        <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+    </header>
 
-        <label for="text">Endereço completo: </label>
-        <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço completo">
+    <section id="formulario">
+        <h2>Formulário de Feedback</h1>
 
-        <label for="checkbox">Tipo de Feedback: </label>
-        <input type="checkbox" id="sugestao" name="sugestao">
-        <label for="sugestao">Sugestão</label>
-        <input type="checkbox" id="reclamacao" name="reclamacao">
-        <label for="reclamacao">Reclamação</label>
-        <input type="checkbox" id="elogio" name="elogio">
-        <label for="elogio">Elogio</label>
-        <input type="checkbox" id="outro" name="outro">
-        <label for="outro">Outro</label>
+            <form action="#">
+                <section id="dados">
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+                    <label for="email">E-mail: </label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+
+                    <label for="text">Endereço completo: </label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço">
+                </section>
+
+                <section id="checkbox">
+                    <label for="checkbox">Tipo de Feedback: </label>
+                    <input type="checkbox" id="sugestao" name="sugestao">
+                    <label for="sugestao">Sugestão</label>
+                    <input type="checkbox" id="reclamacao" name="reclamacao">
+                    <label for="reclamacao">Reclamação</label>
+                    <input type="checkbox" id="elogio" name="elogio">
+                    <label for="elogio">Elogio</label>
+                    <input type="checkbox" id="outro" name="outro">
+                    <label for="outro">Outro</label>
+                </section>
 
 
-        <label for="textarea">Feedback: </label>
-        <textarea name="feedback" id="textarea" cols="30" rows="10" placeholder="Digite seu feedback aqui"></textarea>
+                <label for="textarea">Feedback: </label>
+                <textarea name="feedback" id="textarea" cols="30" rows="10"
+                    placeholder="Digite seu feedback aqui"></textarea>
+                <button type="submit" id="enviar">Enviar</button>
+    </section>
     </form>
 
-    <button type="submit">Enviar</button>
-    
+    <footer>
+        <p>&copy Jessica Sobreira, 2025.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+
 </body>
+
 </html>
